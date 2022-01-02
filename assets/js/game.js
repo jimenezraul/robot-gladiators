@@ -142,15 +142,6 @@ var startGame = function () {
       break;
     }
   }
-  // ask player if they'd like to play again
-  var playAgainConfirm = window.confirm("Would you like to play again?");
-
-  if (playAgainConfirm) {
-    // restart the game
-    startGame();
-  } else {
-    window.alert("Thank you for playing Robot Gladiators! Come back soon!");
-  }
   // after the loop ends, player is either out of health or enemies to fight, so run the endGame function
   endGame();
 };
